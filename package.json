@@ -6,7 +6,7 @@
   },
   "author" : {
     "name" : "Mike Hill",
-    "url" : "https://github.com/allcode"
+    "url" : "https://github.com/mshill"
   },
   "keywords": [
     "node-red",
@@ -22,11 +22,11 @@
   "main": "route-parser/route-parser.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/allcode/node-red-contrib-route-parser"
+    "url": "https://github.com/mshill/node-red-contrib-route-parser"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/allcode/node-red-contrib-route-parser/issues"
+    "url": "https://github.com/mshill/node-red-contrib-route-parser/issues"
   },
-  "homepage": "https://github.com/allcode/node-red-contrib-route-parser"
+  "homepage": "https://github.com/mshill/node-red-contrib-route-parser"
 }
