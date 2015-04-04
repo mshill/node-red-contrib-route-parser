@@ -1,0 +1,32 @@
+{
+  "name": "node-red-contrib-route-parser",
+  "version": "0.0.1",
+  "description": "A node for parsing pathparams in routes for node-red.",
+  "dependencies": {
+  },
+  "author" : {
+    "name" : "Mike Hill",
+    "url" : "https://github.com/allcode"
+  },
+  "keywords": [
+    "node-red",
+    "router",
+    "pathparms",
+    "rest"
+  ],
+  "node-red": {
+    "nodes": {
+      "route-parser": "route-parser/route-parser.js"
+    }
+  },
+  "main": "route-parser/route-parser.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allcode/node-red-contrib-route-parser"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/allcode/node-red-contrib-route-parser/issues"
+  },
+  "homepage": "https://github.com/allcode/node-red-contrib-route-parser"
+}
