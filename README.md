@@ -3,19 +3,18 @@ A node for parsing pathparams in routes for node-red
 
 Parse out pathparams from the route and return in an associative array.
 
-Associative Array is stored in msg.req.route.params as key value pairs
+Associative Array is stored in *msg.req.route.params* as key value pairs.
 
-
-EG:
+If the route was defined in a HTTP input node as:
 ```
-ROUTE: /api/test/:lastname/:firstname/anything/:else/you/might/:route
+/api/test/:lastname/:firstname/anything/:else/you/might/:route
 ```
+and the actual request path is:
 ```
-Actual: /api/test/Hill/Mike/anything/foo/you/might/bar
+/api/test/Hill/Mike/anything/foo/you/might/bar
 ```
-
-would return:
-```javascript
+the parser would add key/value pairs based on path parameters that start with ":" in *msg.req.route.params*:
+```JavaScript
 msg.req.route.params = {
     lastname : "Hill",
     firstname : "Mike",
