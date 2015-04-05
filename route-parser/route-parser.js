@@ -15,7 +15,7 @@
 * limitations under the License.
 **/
 
-// Node for Node-Red that parses pathparams in routes.
+// A node-red node for parsing pathparams in routes for RESTful Web Services.
 
 module.exports = function(RED) {
     "use strict";
@@ -37,21 +37,12 @@ module.exports = function(RED) {
         // respond to inputs
         node.on('input', function (msg) {
             'use strict';
-            // We will be using eval() so lets get a bit of safety using strict
-            
-            // If the node's topic is set, copy to output msg
-            if ( node.topic !== '' ) {
-                msg.topic = node.topic;
-            } // If nodes topic is blank, the input msg.topic is already there
-            
+
             // make sure output property is set, if not, assume msg.payload
             if ( node.output === '' ) {
                 node.output = 'payload';
                 node.warn('Output field is REQUIRED, currently blank, set to msg.payload');
             }
-            // Reference the output object we want: it may be several layers deep
-            // e.g. msg. palyload.some.thing so we cant simply use msg[node.output]
-            var outp = eval('msg.' + node.output);
 
             var outMsg = {};
             var keys = msg.req.route.path.split("/");

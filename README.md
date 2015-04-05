@@ -1,5 +1,5 @@
 # node-red-contrib-route-parser
-A node for parsing pathparams in routes for node-red
+A node-red node for parsing pathparams in routes for RESTful Web Services. 
 
 Parse out pathparams from the route and return in an associative array.
 
