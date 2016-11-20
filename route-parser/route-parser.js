@@ -45,7 +45,7 @@ module.exports = function(RED) {
             }
 
             var outMsg = {};
-            var keys = msg.req.route.path.split("/");
+            var keys = msg.req.route.path.replace('?','').split("/");
             var words = msg.req.path.split("/");
             for (var i = 0; i < keys.length; i++) {
                 if (keys[i].lastIndexOf(":", 0) === 0) {
